@@ -1,5 +1,6 @@
 import Section from "./components/Section";
 import Presentation from "./Sections/Presentation";
+import SocialMedias from "./Sections/SocialMedias";
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
         <Section className="col-span-1 row-span-6">
           <p>Competences</p>
         </Section>
-        <Section className="col-span-1 row-span-5">
-          <p>Reseaux</p>
-        </Section>
+        <SocialMedias className="col-span-1 row-span-5" />
         <Section className="col-span-2 row-span-3">
           <p>Projets</p>
         </Section>
