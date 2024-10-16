@@ -8,11 +8,11 @@ function Section({
   className?: string;
 }) {
   return (
-    <p
-      className={`${className} m-1 inline-block rounded-lg border border-border bg-card p-9 text-foreground`}
+    <div
+      className={`${className} m-1 inline-block rounded-lg border border-border bg-card p-9 text-foreground hover:border-primary`}
     >
       {children}
-    </p>
+    </div>
   );
 }
 export default Section;
