@@ -6,7 +6,8 @@ import SocialMedias from "./Sections/SocialMedias";
 function App() {
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-background">
-      <div className="grid max-h-[90%] max-w-6xl grid-cols-4 grid-rows-8 flex-wrap">
+      <div className="absolute z-0 inline-block h-80 w-80 rounded-full bg-primary blur-3xl" />
+      <div className=" z-10 grid max-h-[90%] max-w-6xl grid-cols-4 grid-rows-8 flex-wrap">
         <Presentation className="col-span-3 row-span-3" />
         <Skills className="col-span-1 row-span-6" />
         <SocialMedias className="col-span-1 row-span-5" />
