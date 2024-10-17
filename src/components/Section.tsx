@@ -9,7 +9,7 @@ function Section({
 }) {
   return (
     <div
-      className={`${className} m-1 inline-block rounded-lg border border-border bg-card p-9 text-foreground hover:border-primary`}
+      className={`${className} m-1 inline-block rounded-lg border border-border p-9 text-foreground hover:border-primary`}
     >
       {children}
     </div>
