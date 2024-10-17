@@ -1,30 +1,40 @@
-import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
-const moveCircle = () => {
-  const randomX = Math.floor(Math.random() * 100);
-  const randomY = Math.floor(Math.random() * 100);
-  return { top: `${randomY}%`, left: `${randomX}%` };
-};
+function getRandomPosition() {
+  const position = Math.floor(Math.random() * 50 + 15);
+  return `${position}%`;
+}
 
-const MovingCircle = () => {
-  const [position, setPosition] = useState(moveCircle());
-
-  useEffect(() => {
-    const updatePosition = () => {
-      setPosition(moveCircle());
-    };
-
-    const interval = setInterval(updatePosition, 5000); // 3 secondes pour atteindre la destination
-
-    return () => clearInterval(interval);
-  }, []);
-
+const Bubble = () => {
   return (
-    <div
-      className="absolute h-64 w-64 rounded-full bg-white opacity-75 blur-3xl transition-all duration-[5000ms] ease-in-out"
-      style={{ top: position.top, left: position.left }}
-    ></div>
+    <motion.div
+      className="will-change-auto fixed left-0 top-0 z-0 h-52 w-52 rounded-full bg-white opacity-50 blur-[50px]"
+      animate={{
+        left: [
+          getRandomPosition(),
+          getRandomPosition(),
+          getRandomPosition(),
+          getRandomPosition(),
+          getRandomPosition(),
+          getRandomPosition(),
+        ],
+        top: [
+          getRandomPosition(),
+          getRandomPosition(),
+          getRandomPosition(),
+          getRandomPosition(),
+          getRandomPosition(),
+          getRandomPosition(),
+        ],
+      }}
+      transition={{
+        duration: 40,
+        ease: "easeInOut",
+        repeatType: "mirror",
+        repeat: Infinity,
+      }}
+    />
   );
 };
 
-export default MovingCircle;
+export default Bubble;
