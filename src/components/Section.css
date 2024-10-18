@@ -1,0 +1,99 @@
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: -180deg;
+}
+
+.section {
+  position: relative;
+  display: inline-block;
+  margin: 4px;
+  color: white;
+  padding: 36px;
+  background: transparent;
+  border-radius: 4px;
+  backdrop-filter: blur(100px);
+  border: solid 2px hsl(240, 3.7%, 15.9%);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 4px;
+  padding: 2px; /* Définit l'épaisseur de la bordure */
+  background: conic-gradient(
+    from var(--angle),
+    transparent,
+    hsl(0, 0%, 60%),
+    transparent 10%
+  );
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  box-sizing: border-box;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  animation: border-animate 6s linear infinite;
+}
+.section:hover::before {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes border-animate {
+  0% {
+    --angle: -180deg;
+  }
+  100% {
+    --angle: 180deg;
+  }
+}
+
+/*
+*
+* .section {
+  position: relative;
+  display: inline-block;
+  margin: 4px;
+  color: white;
+  padding: 36px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(90deg, transparent 50px, #fff 120px, transparent 200px)
+      no-repeat,
+    linear-gradient(0deg, transparent 50px, #fff 120px, transparent 200px)
+      no-repeat;
+  background-size:
+    200px 1px,
+    1px 200px;
+  background-position:
+    -200px 0,
+    100% -200px;
+  background-color: transparent;
+  animation: linearGradientMove 5s infinite linear;
+  border-radius: 4px;
+}
+@keyframes linearGradientMove {
+  50% {
+    background-position:
+      calc(100% + 200px) 0,
+      100% -200px;
+  }
+  100% {
+    background-position:
+      calc(100% + 200px) 0,
+      100% calc(100% + 200px);
+  }
+}
+
+className={`${className} m-1 inline-block overflow-hidden rounded-lg p-9 text-foreground backdrop-blur-3xl before:absolute before:inset-0 before:left-[calc(50%-5px)] before:top-[calc(50%-50vh)] before:h-screen  before:w-10 before:animate-[movingBorder_10s_linear_infinite] before:bg-red-400 before:content-[''] after:absolute after:inset-px after:block after:h-[calc(100%-2px)] after:w-[calc(100%-2px)] after:rounded-lg after:bg-black after:content-[''] after:backdrop-blur-3xl`} 
+*
+    -22px 0,
+    100% -22px;
+* */
