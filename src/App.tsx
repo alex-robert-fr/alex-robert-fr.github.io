@@ -14,16 +14,16 @@ function App() {
           <Bubble />
           <Bubble />
           <Bubble />
-          <Presentation className="col-span-3 row-span-3 backdrop-blur-[100px]" />
-          <Skills className="col-span-1 row-span-6 backdrop-blur-[100px]" />
-          <SocialMedias className="col-span-1 row-span-5 backdrop-blur-[100px]" />
-          <Section className="col-span-2 row-span-3 backdrop-blur-[100px]">
+          <Presentation className="col-span-3 row-span-3" />
+          <Skills className="col-span-1 row-span-6" />
+          <SocialMedias className="col-span-1 row-span-5 " />
+          <Section className="col-span-2 row-span-3">
             <p>Projets</p>
           </Section>
-          <Section className="col-span-2 row-span-2 backdrop-blur-[100px]">
+          <Section className="col-span-2 row-span-2">
             <p>Projets actuel</p>
           </Section>
-          <Section className="col-span-1 row-span-2 backdrop-blur-[100px]">
+          <Section className="col-span-1 row-span-2">
             <p>Blog</p>
           </Section>
         </div>

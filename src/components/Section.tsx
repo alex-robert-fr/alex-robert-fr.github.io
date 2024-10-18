@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import "./Section.css";
 
 function Section({
   children,
@@ -7,12 +8,6 @@ function Section({
   children: ReactElement;
   className?: string;
 }) {
-  return (
-    <div
-      className={`${className} m-1 inline-block rounded-lg border border-border p-9 text-foreground hover:border-primary`}
-    >
-      {children}
-    </div>
-  );
+  return <div className={`${className} section`}>{children}</div>;
 }
 export default Section;
