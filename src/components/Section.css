@@ -13,7 +13,7 @@
   background: transparent;
   border-radius: 4px;
   backdrop-filter: blur(100px);
-  border: solid 2px hsl(240, 3.7%, 15.9%);
+  border: solid 1px hsl(240, 3.7%, 15.9%);
 }
 
 .section::before {

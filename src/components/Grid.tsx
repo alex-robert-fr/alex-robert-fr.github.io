@@ -1,6 +1,6 @@
 function Grid() {
   return (
-    <svg className="absolute left-0 top-0 z-0 h-full w-full opacity-50">
+    <svg className="absolute left-0 top-0 z-0 h-full w-full opacity-75">
       <defs>
         <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
           <path
