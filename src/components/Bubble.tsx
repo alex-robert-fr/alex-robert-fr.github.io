@@ -8,7 +8,7 @@ function getRandomPosition() {
 const Bubble = () => {
   return (
     <motion.div
-      className="will-change-auto fixed left-0 top-0 z-0 h-52 w-52 rounded-full bg-white opacity-50 blur-[50px]"
+      className="will-change-auto fixed left-0 top-0 z-0 h-52 w-52 rounded-full bg-white opacity-30 blur-[50px]"
       animate={{
         left: [
           getRandomPosition(),
