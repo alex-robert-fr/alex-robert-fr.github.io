@@ -3,7 +3,6 @@ import Grid from "./components/Grid";
 import Section from "./components/Section";
 import Presentation from "./Sections/Presentation";
 import Skills from "./Sections/Skills";
-import SocialMedias from "./Sections/SocialMedias";
 
 function App() {
   return (
