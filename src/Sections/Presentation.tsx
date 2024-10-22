@@ -20,16 +20,16 @@ function Presentation({ className }: { className: string }) {
           vraiment unique.
         </p>
         <div className="mt-10">
-          <Button>
+          <Button url="https://github.com/alex-robert-fr">
             <SiGithub className="h-[18px]" />
           </Button>
-          <Button>
+          <Button url="https://www.linkedin.com/in/alex-robert-9551171a7/">
             <SiLinkedin className="h-[18px]" />
           </Button>
-          <Button>
+          <Button url="#">
             <SiDiscord className="h-[18px]" />
           </Button>
-          <Button>
+          <Button url="#">
             <SiGmail className="h-[18px]" />
           </Button>
         </div>
