@@ -16,15 +16,20 @@ function App() {
           <Bubble />
           <Presentation className="col-span-3 row-span-3" />
           <Skills className="col-span-1 row-span-6" />
-          <SocialMedias className="col-span-1 row-span-5 " />
-          <Section className="col-span-2 row-span-3">
-            <p>Projets</p>
+          <Section className="col-span-1 row-span-2">
+            <p>Poste actuel</p>
           </Section>
-          <Section className="col-span-2 row-span-2">
-            <p>Projets actuel</p>
+          <Section className="col-span-2 row-span-3">
+            <p>Selections de Projets</p>
+          </Section>
+          <Section className="col-span-1 row-span-3">
+            <p>Tout mes projets</p>
           </Section>
           <Section className="col-span-1 row-span-2">
             <p>Blog</p>
+          </Section>
+          <Section className="col-span-2 row-span-2">
+            <p>Projets en court / Dernier projet</p>
           </Section>
         </div>
       </div>
