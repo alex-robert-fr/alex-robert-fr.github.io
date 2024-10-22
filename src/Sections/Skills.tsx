@@ -23,10 +23,8 @@ function Skills({ className }: { className: string }) {
         <ul>
           <li>GCC / clang</li>
           <li>Docker</li>
-          <li>Neovim</li>
           <li>GDB</li>
           <li>Valgrind</li>
-          <li>PNPM</li>
         </ul>
       </>
     </Section>

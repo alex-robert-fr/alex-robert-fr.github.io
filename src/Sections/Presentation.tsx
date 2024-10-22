@@ -1,20 +1,38 @@
+import {
+  SiDiscord,
+  SiGithub,
+  SiGmail,
+  SiLinkedin,
+} from "@icons-pack/react-simple-icons";
+import Button from "../components/Button";
 import Section from "../components/Section";
 
 function Presentation({ className }: { className: string }) {
   return (
     <Section className={className}>
       <>
-        <h2>Bienvenue sur mon portfolio !</h2>
-        <p>
-          Développeur autodidacte avec plus de 12 ans d'expérience, je suis
-          passionné par la création de solutions techniques innovantes et
-          efficaces. Ma philosophie repose sur l'apprentissage continu,
-          l'expérimentation et la réalisation de projets concrets. Vous
-          trouverez ici une sélection de mes travaux en développement
-          informatique, allant de projets web à des solutions logicielles
-          complexes. Explorez mes projets et n'hésitez pas à me contacter pour
-          discuter de collaborations ou d'opportunités.
+        <h2 className="mb-2 text-lg">Bienvenue sur mon p'tit bout de web !</h2>
+        <p className="text-muted_foreground">
+          Passionné par la programmation depuis mes 10 ans, je m'intéresse au
+          bas niveau depuis 5 ans maintenant. J'adore relever de nouveaux défis
+          et apprendre en continu. Mon objectif est de bosser sur des projets
+          innovants avec d'autres passionnés pour créer quelque chose de
+          vraiment unique.
         </p>
+        <div className="mt-10">
+          <Button url="https://github.com/alex-robert-fr">
+            <SiGithub className="h-[18px]" />
+          </Button>
+          <Button url="https://www.linkedin.com/in/alex-robert-9551171a7/">
+            <SiLinkedin className="h-[18px]" />
+          </Button>
+          <Button url="#">
+            <SiDiscord className="h-[18px]" />
+          </Button>
+          <Button url="#">
+            <SiGmail className="h-[18px]" />
+          </Button>
+        </div>
       </>
     </Section>
   );
