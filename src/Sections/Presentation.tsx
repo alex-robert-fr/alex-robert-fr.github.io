@@ -12,6 +12,14 @@ function Presentation({ className }: { className: string }) {
           innovants avec d'autres passionnés pour créer quelque chose de
           vraiment unique.
         </p>
+        <div>
+          <ul>
+            <li>Github</li>
+            <li>Linkedin</li>
+            <li>Discord</li>
+            <li>Mail</li>
+          </ul>
+        </div>
       </>
     </Section>
   );
