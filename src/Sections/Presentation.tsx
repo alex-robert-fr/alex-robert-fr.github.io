@@ -1,3 +1,9 @@
+import {
+  SiDiscord,
+  SiGithub,
+  SiGmail,
+  SiLinkedin,
+} from "@icons-pack/react-simple-icons";
 import Button from "../components/Button";
 import Section from "../components/Section";
 
@@ -14,10 +20,18 @@ function Presentation({ className }: { className: string }) {
           vraiment unique.
         </p>
         <div className="mt-10">
-          <Button text="Github" />
-          <Button text="Linkedin" />
-          <Button text="Discord" />
-          <Button text="Email" />
+          <Button>
+            <SiGithub className="h-[18px]" />
+          </Button>
+          <Button>
+            <SiLinkedin className="h-[18px]" />
+          </Button>
+          <Button>
+            <SiDiscord className="h-[18px]" />
+          </Button>
+          <Button>
+            <SiGmail className="h-[18px]" />
+          </Button>
         </div>
       </>
     </Section>
