@@ -4,17 +4,13 @@ function Presentation({ className }: { className: string }) {
   return (
     <Section className={className}>
       <>
-        <h2>Bienvenue sur mon portfolio !</h2>
+        <h2>Bienvenue sur mon p'tit bout de web !</h2>
         <p className="text-muted_foreground">
-          Bonjour, je m'appelle Alex Robert, j'ai 22 ans et je suis passionné
-          par la programmation depuis mes 10 ans, en particulier en C et en
-          assembleur x86. Bien que je sois encore en apprentissage sur l'ASM
-          x86, j'adore explorer le bas niveau et en découvrir toutes ses
-          subtilités. Je suis constamment à la recherche de nouveaux défis, car
-          pour moi, coder, c'est repousser les limites et explorer de nouvelles
-          possibilités. Mon ambition est de participer à des projets innovants,
-          aux côtés d'autres passionnés, pour créer quelque chose
-          d'exceptionnel.
+          Passionné par la programmation depuis mes 10 ans, je m'intéresse au
+          bas niveau depuis 5 ans maintenant. J'adore relever de nouveaux défis
+          et apprendre en continu. Mon objectif est de bosser sur des projets
+          innovants avec d'autres passionnés pour créer quelque chose de
+          vraiment unique.
         </p>
       </>
     </Section>
